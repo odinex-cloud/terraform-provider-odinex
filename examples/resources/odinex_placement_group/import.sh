@@ -1,0 +1,1 @@
+terraform import odinex_placement_group.spread 2

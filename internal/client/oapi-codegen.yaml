@@ -1,0 +1,9 @@
+# The provider authenticates with a project API token, so console-only
+# endpoints (session cookie) are left out of the generated client.
+package: client
+output: client.gen.go
+generate:
+  models: true
+  client: true
+output-options:
+  exclude-tags: [Auth, Account, Projects, Billing, Support, Status]
